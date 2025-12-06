@@ -232,11 +232,17 @@ body{
 .dark-mode .nav-link{
     color:#fff !important;
 }
-
 .dark-mode .btn-outline-dark{
     background:#fff;
     color:#111;
 }
 .navbar-brand{
     color: #f96997;
+}
+.btn{
+    background: #f9bbce;
+    color:#f76fa8;
+    font-weight:bold;
+    border-radius:8px;
+    padding:8px 20px; 
 }
