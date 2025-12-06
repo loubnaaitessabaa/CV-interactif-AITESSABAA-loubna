@@ -1,3 +1,4 @@
+
 // bouton "M’envoyer un message"
 function afficherMessage(){
     alert("Merci pour votre intérêt ! Vous pouvez m’écrire par email ");
