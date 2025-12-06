@@ -25,3 +25,20 @@ darkBtn.addEventListener("click", ()=>{
         darkBtn.classList.remove("btn-light");
     }
 });
+const pdfBtn = document.querySelector("a.btn");
+
+pdfBtn.addEventListener("click", (e)=>{
+    e.preventDefault(); 
+
+    const element = document.querySelector(".cv-card"); // الجزء الذي نطبعه
+
+    const options = {
+        margin: 0.2,
+        filename: "CV_Lobna_Ait_Essabaa.pdf",
+        image: { type: "jpeg", quality: 1 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: "cm", format: "a4", orientation: "portrait" }
+    };
+
+    html2pdf().from(element).set(options).save();
+});
